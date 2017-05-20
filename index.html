@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Http To Https</title>
+  <meta name="description" content="Http To Https is a sleek way to interface to Https only locations from deviced with no https support. Designed for Microcontrollers like Arduino, Espruino and the ESP8266, HttpToHttps allows you to communicate with HTTPS only APIs like GoogleAPIs and the YoutubeDataAPI.">
+  <meta name="author" content="MrTimcakes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.min.css">
+  <link rel="icon" href="logo/logo.png">
+</head>
+<body>
+<div id="particles-js"></div>
+
+<div class="navbar transparent">
+  <div class="navbar-left">
+    <div class="logo">
+      <!-- <a href="#"><img class="inject-me" src="logo/logo.svg"></a> -->
+    </div>
+
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#how-to">How To</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="content">
+
+
+  <div class="content-center">
+    <div class="wrapper">
+      <div class="title">
+        Http<span>To</span>Https
+      </div>
+      <h3>The easy way to interface non TLS enabled devices to Https APIs</h3>
+    </div>
+  </div>
+
+
+  <div id="how-to">
+    <div class="wrapper">
+      <h1>It's really simple and easy to use, try it!</h1>
+      <h3>Visit <a href="http://httptohttps.xyz/https://api.github.com/users/MrTimcakes">http://httptohttps.xyz/https://api.github.com/users/MrTimcakes</a> or enter a URL below</h3>
+      <form onsubmit="window.location.href = '//httptohttps.xyz/' + document.getElementById('proxyUrl').value; return false;">
+        <input id="proxyUrl" type="url" placeholder="http://example.com/" class="urlInput">
+        <input type="submit" value="Try It!" class="btn">
+      </form>
+    </div>
+  </div>
+
+
+  <div id="about">
+    <div class="wrapper">
+      <h1>About</h1>
+      <p>
+        Http To Https was a project created by <a href="//MrTimcakes.com">MrTimcakes</a> for proxying simple API requests.
+      </p>
+      <p>
+        The first use was for microcontrollers that can't quite manage TLS Https encryption, like the <a href="http://www.espruino.com/Order">original Espruino</a>, to reach the Google Youtube Data API.
+      </p>
+      <p>
+        Speaking of <a href="//espruino.com">Espruino</a>, if you haven't already you should check out the project, its a Javascript Interperator for microconrollers. The <a href="http://www.espruino.com/Order">Espruino Pico</a> and the upcoming Espruino Wifi should support TLS.
+      </p>
+      <p>
+        You are free to use this service as you please. However, I cannot promise any guaruntees on uptime or reliablity. This service should not be used for comercial applications.
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+<footer>
+  <p>
+    &lt;/&gt; with <span>&hearts;</span> by <a href="//MrTimcakes.com/">MrTimcakes</a>
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/svginjector/1.1.3/svg-injector.min.js"></script> -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
